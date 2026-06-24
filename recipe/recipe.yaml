@@ -22,6 +22,7 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - poetry-core
+    - setuptools <80,>=78.1.1
     - pip
   run:
     - python >=${{ python_min }},<3.14
