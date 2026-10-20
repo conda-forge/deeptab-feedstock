@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2.0.0"
+  version: "2.1.0"
 
 package:
   name: deeptab
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/OpenTabular/DeepTab/archive/v${{ version }}.tar.gz
-  sha256: 11f13f9638d881b9c4bc039f6b9a9eb15c6249b64484b4303e7888fef2fbe925
+  sha256: d30309998022e011c6cf132ad3837276aa372a3c643f96a052e757d23263d2f9
   patches:
     - faiss.patch
 
