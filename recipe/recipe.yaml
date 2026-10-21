@@ -35,7 +35,7 @@ requirements:
     - einops >=0.8.0,<0.9.0
     - accelerate >=1.2.1,<2.0.0
     - scipy >=1.15.0,<2.0.0
-    - pretab >=0.0.1,<0.0.2
+    - pretab >=1.0,<2
     - delu
     - faiss-cpu
 
