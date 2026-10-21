@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2.0.0"
+  version: "2.1.0"
 
 package:
   name: deeptab
@@ -9,9 +9,7 @@ package:
 
 source:
   url: https://github.com/OpenTabular/DeepTab/archive/v${{ version }}.tar.gz
-  sha256: 11f13f9638d881b9c4bc039f6b9a9eb15c6249b64484b4303e7888fef2fbe925
-  patches:
-    - faiss.patch
+  sha256: d30309998022e011c6cf132ad3837276aa372a3c643f96a052e757d23263d2f9
 
 build:
   number: 0
@@ -29,17 +27,16 @@ requirements:
     - pandas >=2.0.3,<3.0.0
     - lightning >=2.3.3,<3.0.0
     - scikit-learn >=1.3.2,<2.0.0
-    - pytorch >=2.2.2,<2.10.0
+    - pytorch <2.15.0,>=2.13.0
     - torchmetrics >=1.5.2,<2.0.0
-    - setuptools <80,>=78.1.1
+    - setuptools <84,>=83.0.0
     - properscoring >=0.1.0,<0.2.0
     - scikit-optimize >=0.10.2,<0.11.0
     - einops >=0.8.0,<0.9.0
     - accelerate >=1.2.1,<2.0.0
     - scipy >=1.15.0,<2.0.0
-    - pretab >=0.0.1,<0.0.2
+    - pretab >=1.0,<2
     - delu
-    - faiss-cpu
 
 tests:
   - python:
